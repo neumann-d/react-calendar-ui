@@ -1,0 +1,48 @@
+.Calendar {
+  position: absolute;
+  left: 500px;
+  width: 1600px;
+  text-align: center;
+  border: 1px solid lightgrey;
+  box-shadow: 2px 2px 2px #eee;
+  background-color: #fff;
+}
+
+.Calendar-header {
+  padding-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  height: 120px;
+}
+
+.Calendar-header-menu-item {
+  width: 150px;
+  height: 30px; 
+  margin: 10px;
+}
+
+.Calendar-header-menu-item-button {
+  cursor: pointer;
+}
+
+.Calendar-body {
+  padding-left: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Calendar-header-filter-box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Calendar-item-filter {
+  width: 150px;
+  height: 30px;
+  border: 1px solid lightgrey;
+  margin: 10px;
+  cursor: pointer;
+}
