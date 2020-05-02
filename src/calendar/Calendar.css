@@ -5,7 +5,7 @@
   text-align: center;
   border: 1px solid lightgrey;
   box-shadow: 2px 2px 2px #eee;
-  background-color: #fff;
+  background-color: #eee;
 }
 
 .Calendar-header {
@@ -13,12 +13,21 @@
   display: flex;
   flex-wrap: wrap;
   height: 120px;
+  align-items: center;
+  justify-content: center;
 }
 
 .Calendar-header-menu-item {
   width: 150px;
   height: 30px; 
   margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Calendar-header-menu-item-month {
+  font-weight: bold;
 }
 
 .Calendar-header-menu-item-button {
@@ -42,7 +51,13 @@
 .Calendar-item-filter {
   width: 150px;
   height: 30px;
-  border: 1px solid lightgrey;
   margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Calendar-item-filter-button {
+  border: 1px solid lightgrey;
   cursor: pointer;
 }

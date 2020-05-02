@@ -1,5 +1,10 @@
 .Calendar-item {
+    display: flex;
     width: 90%;
-    height: 20px;
+    height: 30px;
     color: #000;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #eee;
+    border-radius: 10px;
 }

@@ -10,7 +10,9 @@
 }
 
 .Calendar-day-small {
-  height: 50px;
+  justify-content: center;
+  background-color: rgb(190, 190, 190);
+  height: 30px;
 }
 
 .Calendar-day-selected {
@@ -26,4 +28,5 @@
   height: 800px;
   border: 1px solid lightgrey;
   box-shadow: 2px 2px 2px #eee;
+  background-color: #eee;
 }

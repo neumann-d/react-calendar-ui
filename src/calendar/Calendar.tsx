@@ -109,7 +109,7 @@ const Calendar = ({
         >
           Prev
         </button>
-        <div className="Calendar-header-menu-item">
+        <div className="Calendar-header-menu-item Calendar-header-menu-item-month">
           {MONTHS[month]} {year}
         </div>
         <button
@@ -120,14 +120,14 @@ const Calendar = ({
           Next
         </button>
         <div className="Calendar-header-filter-box">
-          Filters:
+          <div className="Calendar-item-filter">Filters:</div>
           {itemFilters &&
             Object.keys(itemFilters).map((filter) => {
               return (
                 <button
                   key={filter}
                   id={`filter-${itemFilters[filter].id}`}
-                  className="Calendar-item-filter"
+                  className="Calendar-item-filter Calendar-item-filter-button"
                   style={{
                     color: itemFilters[filter].enabled ? "#000" : "#eee",
                   }}
@@ -161,7 +161,9 @@ const Calendar = ({
                 }}
                 items={d > 0 ? setDayItems(d) : []}
               >
-                <span>{d > 0 ? d : ""}</span>
+                <span>
+                  <strong>{d > 0 ? d : ""}</strong>
+                </span>
               </Day>
             );
           })}
